@@ -1,0 +1,162 @@
+*{
+  scroll-behavior: smooth;}
+
+body{
+  color: #6E260E;
+  background: linear-gradient(95deg, #FBCEB1, #FFDEAD, #EADDCA);
+  font-size: 37px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(120deg, #814141AA, #EADDCA);
+  }
+nav > ul > li{
+  padding: 0 50px;
+  display: inline-block;
+  }
+nav > ul > li > a{
+ text-decoration: none;
+  color: #834333;
+}
+nav > ul > li > a:hover{
+   color: #4d3300;
+}
+
+#welcome-section{
+  padding-top: 200px;
+  text-align: center;
+font-size: 50px;
+}
+
+#after-welcome{
+  text-align: center;
+font-size: 40px;
+padding: 0 100px;
+color: #814141;
+border: 5px solid #814141CC;
+border-radius: 25px;
+
+}
+
+#projects{
+  text-align: center;
+  align-items: center;
+  background: radial-gradient(#DEB887,#FFDEAD, #FFEFD5);
+  border-radius: 30px;
+  padding-bottom: 65px;
+      }
+#projects h2{
+  padding-top: 125px;
+ }
+.project-tile{
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+}
+.project-tile a{
+  color:   #9d4e15;
+  text-decoration: none;
+  font-weight: 550;
+  }
+.project-tile figcaption{
+margin-top: 17px;
+  }
+.project-tile figcaption:hover{
+  color: #e69900;
+}
+.project-tile img{
+  height: 750px;
+  width: 950px;
+  object-fit: cover;
+}
+.project-tile img:hover{
+  border: 5px dashed #ffb31a;
+  border-radius: 20px;
+}  
+#profile-link{
+  text-decoration: none;
+  color: #70380f;
+  font-weight: bold;
+  text-align: center;
+   }
+#profile-link:hover{
+  color: #ffb31a;
+}
+
+
+#contact{
+  text-align: center;
+  line-height: 1;
+}
+#contact a{
+  text-decoration: none;
+  color: #6E260E;
+}
+#contact a:hover{
+  color: white;
+}
+
+
+
+
+@media (max-width: 2000px) and (min-width: 800px){
+  .project-tile{
+    display: grid;
+    grid-columns: 1;
+    grid-template-columns: auto;
+    }
+    .project-tile img{
+  height: 650px;
+  width: 750px;
+  object-fit: cover;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 600px){
+  .project-tile{
+    display: grid;
+    grid-columns: 1;
+    grid-template-columns: auto;
+    }
+    .project-tile img{
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  }
+   #welcome-section{
+    font-size: 40px;}
+  body{
+    font-size: 30px;
+  }
+  nav > ul > li > a{
+   color: white;}
+}
+@media (max-width: 600px) and (min-width: 400px){
+  .project-tile{
+    display: grid;
+    grid-columns: 1;
+    grid-template-columns: auto;
+    }
+    .project-tile img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  }
+  body{
+    font-size: 25px;
+  }
+  #welcome-section{
+    font-size: 30px;
+  }
+  nav > ul > li > a{
+   color: white;
+}
+}
